@@ -1,5 +1,64 @@
-html {
-    text-align: center;
-    font-size: 32px;
-    font-family: "Outfit";
-  }
+#dumbassCat {
+  width: 64px;
+  height: 64px;
+}
+
+.dumbassCat {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.inputArea {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  text-align: center;
+  font-family: "Outfit";
+  font-size: 24px;
+  color: rgb(255, 255, 255);
+}
+
+#ewowResponse {
+  width: 800px;
+  height: 25px;
+  
+  border: none;
+  border-bottom: 2px solid rgb(127, 127, 127);
+  background-color: rgba(0, 0, 0, 0);
+  outline: none;
+
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  font-family: "Outfit";  
+}
+
+::placeholder {
+  color: rgba(255, 255, 255, 0.1);
+}
+
+#mistakeText {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  text-align: center;
+  font-family: "Outfit";
+  font-size: 32px;
+  color: rgb(255, 255, 255);
+}
+
+footer {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  font-family: "Outfit";
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.2);
+}
