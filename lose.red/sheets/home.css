@@ -1,0 +1,58 @@
+:root {
+    --borderWidth: 2px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+nav {
+    height: 80px;
+    width: 600px;
+
+    z-index: 1;
+}
+
+.window {
+    border: solid 0px rgb(127, 23, 31);
+    box-sizing: border-box;
+}
+
+#mainWindow {
+    height: 380px;
+    width: 600px;
+
+    z-index: 2;
+
+    background-color: rgb(31, 11, 15);
+
+    position: relative;
+    bottom: 40px;
+
+    border-width: 2px;
+}
+
+.tab {
+    height: 100%;
+    width: 25%;
+
+    border-width: 2px;
+    border-radius: 8px;
+
+    background-color: rgb(31, 11, 15);
+
+    display: block;
+    float: left;
+}
+
+/*
+.tab:last-child {
+    border-right-width: 0px;
+} */
