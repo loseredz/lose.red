@@ -58,7 +58,7 @@ main {
   bottom: -12px;
   right: 12px;
 
-  color: rgba(255, 255, 255, 0.5);
+  color: rgb(255, 255, 255);
   font-size: 18px;
   text-align: right;
   font-family: "Outfit";

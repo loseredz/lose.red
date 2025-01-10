@@ -35,7 +35,7 @@ function getWordCount(text) {
         let hasAlphanum = false;
 
         for (const char of word) {
-            if (/[a-zA-Z0-9]/.test(char)) {
+            if (/[a-zA-Z0-9]/.test(char)) { //this is wrong, .isalnum() in .py uses unicode properties. remember to fix
                 hasAlphanum = true;
                 break;
             }
