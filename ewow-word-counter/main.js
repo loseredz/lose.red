@@ -35,7 +35,7 @@ function getWordCount(text) {
         let hasAlphanum = false;
 
         for (const char of word) {
-            if (/[\p{L}0-9]/u.test(char)) { //thanks athina
+            if (/[a-zA-Z0-9]/.test(char)) { //this is wrong, .isalnum() in .py uses unicode properties. remember to fix
                 hasAlphanum = true;
                 break;
             }
@@ -65,7 +65,7 @@ responseArea.onkeyup = function responseUpdate() {
 }
 
 // thanks firefox, would use contenteditable="plaintext-only" otherwise
-responseArea.addEventListener("paste", (event) => {
+responseArea.addEventListener("paste", (event) => { 
     event.preventDefault();
     const text = event.clipboardData.getData("text/plain");
     const selectedRange = window.getSelection().getRangeAt(0);
